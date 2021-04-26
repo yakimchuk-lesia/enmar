@@ -1,0 +1,512 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Myriad Pro-Regular';
+  src: url("../fonts/MyriadPro-Regular.eot"), url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Lato-BoldItalic';
+  src: url("../fonts/Lato-BoldItalic.woff2") format("woff2"), url("../fonts/Lato-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: 'Montserrat-Regular', sans-serif; }
+
+.main-container {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 10px;
+  margin: 0 auto; }
+
+.header__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(../img/1100px.jpg);
+  padding: 240px 0px 0px;
+  background-repeat: no-repeat;
+  height: 100%; }
+
+.header__title {
+  margin: 45px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.main__title,
+.main__name,
+.header__email,
+.header__logo {
+  margin: 20px auto;
+  font-family: 'Monserrat', sans-serif;
+  font-size: 75px;
+  color: ghostwhite;
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2); }
+
+.header__logo {
+  content: url(../img/Energo_Market_logo-2.png);
+  margin: 20px auto; }
+
+.header__viber {
+  width: 350px;
+  height: 56px;
+  background-color: #8d81ac;
+  position: relative;
+  text-align: center;
+  padding: 25px 12px 0px 45px;
+  margin: 0 auto;
+  border: solid #8d81ac;
+  border-radius: 3%; }
+  .header__viber::before {
+    content: url(../img/iconfinder_Viber_2460217.png);
+    position: absolute;
+    left: 20px;
+    top: 6px; }
+  .header__viber:hover {
+    background-color: #635c73;
+    -webkit-transition: 0.28s;
+    transition: 0.28s;
+    border: solid #fff;
+    border-radius: 3%; }
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 23px; }
+
+.header__buttons {
+  padding-left: 20px;
+  padding-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.schedule,
+.phones-call,
+.address {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 16px; }
+
+.schedule-text,
+.addres-text {
+  color: #fff;
+  font-size: 25px;
+  text-align: center; }
+
+.phones-call::before {
+  content: url(../img/iconfinder_whatsapp_messenger_logo_app_application_call_chat_2701071.png); }
+
+.schedule::before {
+  content: url(../img/iconfinder_Asset_11_2342732.png); }
+
+.address::before {
+  content: url(../img/iconfinder_Asset_5_2342175-2.png); }
+
+.phones-call::before,
+.schedule::before,
+.address::before {
+  position: absolute;
+  top: 12px;
+  left: -45px; }
+
+.inner-block {
+  max-width: 1100px; }
+
+.google-map {
+  width: 100%; }
+
+@media (min-width: 760px) and (max-width: 992px) {
+  .main-container {
+    width: 100%;
+    margin: 0 auto; }
+
+  .header__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: url(../img/1100px.jpg);
+    padding: 240px 0px 0px;
+    background-repeat: no-repeat;
+    height: 100%; }
+    .header__flextitle {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+
+  .main__title,
+  .main__name,
+  .header__email {
+    font-size: 40px; }
+
+  .header__logo {
+    content: url(../img/250_80.png);
+    margin: 20px auto; }
+
+  .header__buttons {
+    padding-bottom: 20px;
+    padding-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+  .schedule,
+  .phones-call,
+  .address {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 70px 0px 25px 0px; }
+
+  .phones-call::before,
+  .schedule::before,
+  .address::before {
+    position: absolute;
+    top: 0px;
+    left: 47%; } }
+@media (min-width: 460px) and (max-width: 759px) {
+  .main-container {
+    max-width: 460px;
+    margin: 0 auto; }
+
+  .header__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: url(../img/460px-2.jpg);
+    padding: 110px 0px 0px 0px;
+    background-repeat: no-repeat;
+    height: 100%; }
+
+  .header__title {
+    margin: 0px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .main__title,
+  .header__email {
+    font-size: 40px;
+    margin: 15px auto; }
+
+  .main__name {
+    font-size: 34px; }
+
+  .header__buttons {
+    padding-left: 14px;
+    padding-bottom: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+  .header__logo {
+    content: url(../img/250_80.png);
+    margin: 18px auto; }
+
+  .header__viber {
+    width: 250px;
+    height: 53px;
+    background-color: #8d81ac;
+    position: relative;
+    text-align: center;
+    padding: 25px 12px 0px 45px;
+    margin: 0 auto;
+    border: solid #8d81ac;
+    border-radius: 3%; }
+    .header__viber::before {
+      content: url(../img/iconfinder_Viber_2460217.png);
+      position: absolute;
+      left: 0px; }
+
+  .schedule,
+  .phones-call,
+  .address {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 58px 0px 14px 0px; }
+
+  .phones-call::before,
+  .schedule::before {
+    position: absolute;
+    top: 0px;
+    left: 45%; }
+
+  .address::before {
+    position: absolute;
+    top: 0px;
+    left: 47%; } }
+@media (min-width: 320px) and (max-width: 459px) {
+  .main-container {
+    max-width: 459px;
+    margin: 0 auto; }
+
+  .header__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: url(../img/460px-2.jpg);
+    padding: 110px 0px 0px 0px;
+    background-repeat: no-repeat;
+    height: 100%; }
+
+  .header__title {
+    margin: 25px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    align-items: center; }
+
+  .main__title,
+  .header__email,
+  .main__name {
+    font-size: 29px; }
+
+  .header__email {
+    margin: 15px auto; }
+
+  .main__name {
+    margin: 0px auto; }
+
+  .header__buttons {
+    padding-left: 0px;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+  .header__logo {
+    content: url(../img/250_80.png);
+    margin: 18px auto; }
+
+  .header__viber {
+    width: 200px;
+    height: 48px;
+    background-color: #8d81ac;
+    position: relative;
+    text-align: center;
+    padding: 25px 12px 0px 45px;
+    margin: 0 auto;
+    border: solid #8d81ac;
+    border-radius: 3%; }
+    .header__viber::before {
+      content: url(../img/iconfinder_Viber_2460217.png);
+      position: absolute;
+      left: 0px; }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px; }
+
+  .schedule-text,
+  .addres-text {
+    color: #fff;
+    font-size: 20px;
+    text-align: center; }
+
+  .schedule,
+  .phones-call,
+  .address {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 58px 0px 14px 0px; }
+
+  .phones-call::before,
+  .schedule::before {
+    position: absolute;
+    top: 0px;
+    left: 44%; }
+
+  .address::before {
+    position: absolute;
+    top: 0px;
+    left: 46%; } }
